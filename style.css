@@ -1,0 +1,28 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #0d1117;
+  color: white;
+}
+
+a:link{
+  color:blue;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  color:blue;
+}
+a:focus{
+  color:blue;
+}
+a:active{
+  color:blue;
+}
+a:text-decoration{
+none;
+}

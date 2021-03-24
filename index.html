@@ -1,31 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
+<!doctype html>
+
+<html lang="en">
+<head>
   
+   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>Viktor's Hangout</title>
 
-  
-  
   <link rel="stylesheet" href="style.css" type="text/css">
 
-</head><body>
+</head>
+
+<body>
+
+<center>
+	<form>
+   <div id="inner"><input type="button" id="playbutton" name="something" value="play" onclick="funcname()"> </div>
+   </form>
+   
+<img src="whitebg.png" id="whitebg">
 <br>
 
 <big><big><span style="text-decoration: none;"><big style="font-weight: bold;"><big><big><big>Viktor's
-Hangout</big></big></big></big></span></big></big>&nbsp;&nbsp;&nbsp; <button onclick="myFunction()">dark</button><br>
-
+Hangout</big></big></big></big></span></big></big>&nbsp;&nbsp;&nbsp; 
+<br>
 trkviktor#2631<br>
 
 <br>
 
 <br>
 
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
+
 <big><big><big><a href="https://github.com/trkviktor/">Github</a></big></big></big><br>
 
 <br>
@@ -34,5 +39,34 @@ function myFunction() {
 Future project: RPG.. 2025</big></big><br style="color: rgb(0, 153, 0);">
 
 <br>
+<script type="text/javascript">
 
-</body></html>
+   function funcname()
+   {
+
+       document.body.innerHTML += "";
+	   var image_x = document.getElementById('whitebg');
+		image_x.parentNode.removeChild(image_x);
+		var elem = document.getElementById('playbutton');
+		elem.parentNode.removeChild(elem);
+		var vid = document.getElementById("bgvid");
+		vid.volume = 0.2;
+   }
+
+   </script>
+   
+
+  <video onloadstart="this.volume=0.1" playsinline loop autoplay id="bgvid">
+  <source src="frog.mp4" type="video/mp4">
+</video>
+
+
+
+
+  <!-- <script> -->
+	<!-- var song = document.getElementById("playAudio"); -->
+	<!-- song.volume = 0.2; -->
+  <!-- </script> -->
+  </center>
+</body>
+</html>

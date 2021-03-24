@@ -1,3 +1,43 @@
+/* Style the video: 100% width and height to cover the entire window */
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 25%;
+    min-height: 100%;
+    width: 500;
+    height: 500;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+#playbutton {
+ padding: 0;
+border: none;
+background: none;
+outline: none;
+position: fixed;
+top: 50%;
+left: 50%;
+
+
+  
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: .20px;
+}
+
 body {
   background-color: white;
   color: black;
@@ -26,3 +66,4 @@ a:active{
 a:text-decoration{
 none;
 }
+

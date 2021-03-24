@@ -49,14 +49,14 @@ Future project: RPG.. 2025</big></big><br style="color: rgb(0, 153, 0);">
 		image_x.parentNode.removeChild(image_x);
 		var elem = document.getElementById('playbutton');
 		elem.parentNode.removeChild(elem);
-		var vid = document.getElementById("bgvid");
-		vid.volume = 0.2;
+	var videoPlayer = document.getElementById('bgvid');
+    videoPlayer.play()
    }
 
    </script>
    
 
-  <video onloadstart="this.volume=0.1" playsinline loop autoplay id="bgvid">
+  <video onloadstart="this.volume=0.1" playsinline loop id="bgvid">
   <source src="frog.mp4" type="video/mp4">
 </video>
 

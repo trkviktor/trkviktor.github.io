@@ -53,6 +53,8 @@ x.style.display = "none";
 		image_x.parentNode.removeChild(image_x);
 		var elem = document.getElementById('playbutton');
 		elem.parentNode.removeChild(elem);
+	   	var videoPlayer = document.getElementById('bgvid');
+    		videoPlayer.play()
 		var x = document.getElementById("main");
 		x.style.display = "block";
    }
@@ -60,7 +62,7 @@ x.style.display = "none";
    </script>
    
 
-  <video onloadstart="this.volume=0.1" playsinline loop autoplay id="bgvid">
+  <video onloadstart="this.volume=0.1" playsinline loop id="bgvid">
   <source src="frog.mp4" type="video/mp4">
 </video>
 
